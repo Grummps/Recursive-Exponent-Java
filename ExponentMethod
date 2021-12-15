@@ -1,11 +1,11 @@
-	public static int exponentMethod(int number, int exponent)
-	{
+public static int exponentMethod(int number, int exponent)
+{
 
-		if (exponent > 0)
-			return number * exponentMethod(number, exponent - 1); // for positive exponents
-		else if (exponent < 0)
-			return (number * exponentMethod(number, exponent + 1)); // for negative exponents
-		else 
-			return 1;
+	if (exponent > 0)
+		return number * exponentMethod(number, exponent - 1); // for positive exponents
+	else if (exponent < 0)
+		return (number * exponentMethod(number, exponent + 1)); // for negative exponents
+	else 
+		return 1;
 		
-	} // end exponentMethod
+} // end exponentMethod
