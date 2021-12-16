@@ -1,3 +1,19 @@
+public static void main(String[] args)
+{		
+	String baseNumberTextField = JOptionPane.showInputDialog("Enter the base number: "); // asks user to input the base number
+	int baseNumber = Integer.parseInt(baseNumberTextField); //converts string to int
+		
+	String exponentTextField = JOptionPane.showInputDialog("Now enter the exponent: "); // asks user to input the exponent
+	int exponent = Integer.parseInt(exponentTextField); //converts string to int
+		
+	if (exponent < 0)
+		JOptionPane.showMessageDialog(null, "\n" + baseNumber + " to the " + exponent + " is 1 / " + exponentMethod(baseNumber, exponent)); // doing '1 / ' this way makes it more in-line with regular algebra/calculus for negative exponents
+	else
+		JOptionPane.showMessageDialog(null,"\n" + baseNumber + " to the " + exponent + " is " + exponentMethod(baseNumber, exponent));
+		
+	JOptionPane.showMessageDialog(null, "Nice!"); // congrats
+}
+
 public static int exponentMethod(int number, int exponent)
 {
 
