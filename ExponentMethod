@@ -6,6 +6,6 @@ public static int exponentMethod(int number, int exponent)
 	else if (exponent < 0)
 		return (number * exponentMethod(number, exponent + 1)); // for negative exponents
 	else 
-		return 1;
+		return 1; // assumes exponent is 0
 		
 } // end exponentMethod
